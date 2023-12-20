@@ -1,0 +1,124 @@
+/*
+Template Name: Medwise
+Template URL: http://wwsthemes.com/themes/medwise/v1.4/
+Description: HTML5 Bootstrap Medical And Health Template
+Version: 1.4
+Author: WWS Themes
+Author URL: http://wwsthemes.com
+*/
+
+
+/* Modals */
+
+.modal{
+  text-align: center;
+}
+
+.modal-dialog{
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-title{
+    font-weight: 700;   
+    text-align: center;
+}
+
+.modal-header{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 15px;
+}
+
+.modal-body{
+    padding: 30px;
+    color: #fff;
+}
+
+.modal-body .heading{
+    margin-top: 0px;
+}
+
+.modal-body [class^="col-"],
+.modal-body [class^="container"]{
+	padding:0px;
+}
+
+.modal-footer{
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 15px;
+}
+
+.modal-header, .modal-body, .modal-footer{
+    position: relative;
+}
+
+.modal-content{
+    border: 2px solid #f2f2f2;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.modal-popup .modal-content:before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0p;
+    top: 0px;
+    background-color: rgba(22,150,231,0.80);
+}
+
+.modal .close{
+    position: absolute;
+    top:-10px;
+    right: -10px;
+    background-color: #1696e7;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    text-shadow: none;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    opacity: 1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px #222;
+    z-index: 2;
+}
+
+.modal-backdrop.in{
+    opacity: 0.75;
+}
+
+/* Media Queries */
+
+/* Large Devices, Dektops */
+@media only screen and (min-width: 1200px){
+
+}
+
+/* Medium Devices, Laptops */
+@media only screen and (min-width: 992px){
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+   
+
+
+.modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+}
+}
+
+/* Extra Small Devices */ 
+@media only screen and (min-width : 480px) {
+
+}
