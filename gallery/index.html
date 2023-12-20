@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GALLERY</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="../css/about.css">
+        <script src="css/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    
+        <script>
+        
+            jQuery(document).ready(function() 
+            {
+                jQuery('.carousel[data-type="multi"] .item').each(function()
+                {
+                    var next = jQuery(this).next();
+                    if (!next.length) 
+                    {
+                        next = jQuery(this).siblings(':first');
+                    }
+                    next.children(':first-child').clone().appendTo(jQuery(this));
+    
+                    for (var i=0;i<2;i++) 
+                    {
+                        next=next.next();
+                        if (!next.length) 
+                        {
+                            next = jQuery(this).siblings(':first');
+                        }
+                        next.children(':first-child').clone().appendTo($(this));
+                    }
+                });
+            });
+            
+        </script>
+        
+        <style>
+
+            .carousel-control.left, .carousel-control.right 
+            {
+                background-image:none;
+            }
+
+            .img-responsive
+            {
+                width:100%;
+                height:250px;
+            }
+            
+            label.line 
+            {
+                background: #f9a821;
+                height: 3px;
+                width: 32%;
+                box-shadow: 0 9px 6px rgba(0, 0, 0, 0.175);
+                display: block;
+                margin: 20px auto;
+            }
+
+            @media (min-width: 992px ) 
+            {
+                .carousel-inner .active.left 
+                {
+                    left: -25%;
+                }
+                
+                .carousel-inner .next 
+                {
+                    left:  25%;
+                }
+                
+                .carousel-inner .prev 
+                {
+                    left: -25%;
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 991px ) 
+            {
+                .carousel-inner .active.left 
+                {
+                    left: -33.3%;
+                }
+                
+                .carousel-inner .next 
+                {
+                    left:  33.3%;
+                }
+  
+                .carousel-inner .prev 
+                {
+                    left: -33.3%;
+                }
+  
+                .active > div:first-child 
+                {
+                    display:block;
+                }
+  
+                .active > div:first-child + div 
+                {
+                    display:block;
+                }
+                
+                .active > div:last-child 
+                {
+                    display:none;
+                }
+            }
+
+            @media (max-width: 767px) 
+            {
+                .carousel-inner .active.left 
+                {
+                    left: -100%;
+                }
+  
+                .carousel-inner .next 
+                {
+                    left:  100%;
+                }
+                
+                .carousel-inner .prev 
+                {
+                    left: -100%;
+                }
+                
+                .active > div 
+                {
+                    display:none;
+                }
+                
+                .active > div:first-child 
+                {
+                    display:block;
+                }
+            }
+            
+        </style>
+
+    </head>
+    <body style="background-image: url(../images/bg1.png);background-color: #fff;" oncontextmenu="return false;">
+        <div class="container">
+            <h2 class="block-title1">GALLERY</h2>
+            <label class="line" style="width: 13%;"></label>
+            <!--The main div for carousel-->
+            <div class="container text-center">
+                <div class="carousel slide row" data-ride="carousel" data-type="multi" data-interval="2000" id="fruitscarousel">
+                    <div class="carousel-inner">
+           
+						<div class="item active">
+							<div class="col-md-3 col-sm-4 col-xs-12 img-bound"><a href="#"><img draggable="false" src="galleryimages/43383-1.JPG" class="img-responsive"></a></div>
+						</div>
+						
+						<div class="item">
+							<div class="col-md-3 col-sm-4 col-xs-12 img-bound"><a href="#"><img draggable="false" src="galleryimages/17064-2.JPG" class="img-responsive"></a></div>
+						</div>
+						
+						<div class="item">
+							<div class="col-md-3 col-sm-4 col-xs-12 img-bound"><a href="#"><img draggable="false" src="galleryimages/97201-3.JPG" class="img-responsive"></a></div>
+						</div>
+						
+						<div class="item">
+							<div class="col-md-3 col-sm-4 col-xs-12 img-bound"><a href="#"><img draggable="false" src="galleryimages/92794-4.JPG" class="img-responsive"></a></div>
+						</div>
+						
+						<div class="item">
+							<div class="col-md-3 col-sm-4 col-xs-12 img-bound"><a href="#"><img draggable="false" src="galleryimages/15429-5.JPG" class="img-responsive"></a></div>
+						</div>
+						
+						<div class="item">
+							<div class="col-md-3 col-sm-4 col-xs-12 img-bound"><a href="#"><img draggable="false" src="galleryimages/78630-6.JPG" class="img-responsive"></a></div>
+						</div>
+						
+						<div class="item">
+							<div class="col-md-3 col-sm-4 col-xs-12 img-bound"><a href="#"><img draggable="false" src="galleryimages/15897-7.JPG" class="img-responsive"></a></div>
+						</div>
+                
+                    </div>
+
+                    <a class="left carousel-control" href="#fruitscarousel" data-slide="prev">
+                    <i class="glyphicon glyphicon-chevron-left"><img draggable="false" src="images/l1.png"></i></a>
+                    <a class="right carousel-control" href="#fruitscarousel" data-slide="next">
+                    <i class="glyphicon glyphicon-chevron-right"><img draggable="false" src="images/r1.png"></i></a> 
+
+                </div>
+            </div>
+        </div>
+        
+        <style type="text/css">
+            
+            .img-bound
+            {
+                overflow:hidden;
+            }
+            
+            .img-bound img
+            {
+                -webkit-transition: all 1.5s ease;
+                transition: all 1.5s ease;
+                width: 100%;
+            }
+            
+            .img-bound img:hover
+            {
+                -webkit-transform:scale(1.2);
+                transform:scale(1.2);
+            }
+            
+        </style>
+        
+        <style type="text/css">
+            
+            @media (max-width: 1100px) and (min-width: 700px)
+            {
+                .img-responsive 
+                {
+                    height: 346px;
+                }
+
+                .block-title1
+                {
+                    margin-top: 41px!important;
+                }
+            }
+        
+        </style>
+        
+        <script>
+            
+            $(document).ready(function() 
+            {
+                $(window).on("contextmenu",function(e)
+                {
+                    return false;
+                });
+            });
+            
+            document.onkeydown = function (e) 
+            {
+                e = e || window.event;//Get event
+                if (e.ctrlKey) 
+                {
+                    var c = e.which || e.keyCode;//Get key code
+                    switch (c) 
+                    {
+                        case 83://Block Ctrl+S
+                        case 87://Block Ctrl+W --Not work in Chrome
+                        case 73://Block Ctrl+I
+                        case 67: //Block Ctrl+C
+                            e.preventDefault();    
+                            e.stopPropagation();
+                        break;
+                    }
+                }
+            };
+            
+        </script>
+        
+    </body>
+</html>
+
